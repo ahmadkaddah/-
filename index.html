@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعله ينشرح صدرك</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>لعله ينشرح صدرك</h1>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="window.location.href='index.html'">الرئيسية</button>
+            <button onclick="window.location.href='daawatkum.html'">دعواتكم</button>
+        </div>
+        <button onclick="showPrayerForm()">دعوتك ✨</button>
+        <div id="prayerForm" style="display: none;">
+            <textarea id="prayerInput" rows="4" placeholder="اكتب دعوتك هنا..."></textarea>
+            <button onclick="savePrayer()">إرسال</button>
+        </div>
+        <div class="content" id="verse"></div>
+        <div class="reference" id="reference"></div>
+        <div class="explanation" id="explanation"></div>
+        <button onclick="refreshContent()">آية جديدة</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
